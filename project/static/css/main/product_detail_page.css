@@ -225,7 +225,8 @@ letter-spacing: -1px;
     color: #000;
     font-size: 14px;
     font-weight: 400;
-line-height: 20px;
+    line-height: 20px; /* 142.857% */
+
 }
 
 .frame36>div:nth-child(2){
