@@ -14,8 +14,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let newTotalPrice = currentQuantity *parseFloat(productPrice.innerHTML.replace(/[^0-9.-]+/g,"")); 
         console.log(productPrice);
 
-        console.log(newTotalPrice);
-        totalPriceElement.innerText = newTotalPrice + '원';
+        console.log(newTotalPrice.toLocaleString());
+        
+        totalPriceElement.innerText = newTotalPrice+ '원';
     }
     
     decrease.addEventListener('click', () => {
