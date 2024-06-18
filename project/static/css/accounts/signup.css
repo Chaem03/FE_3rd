@@ -1,1 +1,199 @@
 /* signup page - CSS */
+
+.container{ 
+    border: 1px solid red;
+    display: flex;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.body{
+    display: flex;
+padding-top: 50px;
+width: 1050px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
+
+}
+.signup{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
+}
+
+.su{
+    display: flex;
+width: 240px;
+padding: 16px 0px;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+background: var(--stroke-stroke-2, #E2E2E2);
+}
+
+.signup>div:nth-child(1){
+    color: #000;
+
+text-align: right;
+font-family: Pretendard;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px; /* 114.286% */
+letter-spacing: -1px;
+}
+
+.inputlist{
+    display: flex;
+flex-direction: column;
+
+align-self: stretch;
+
+}
+
+.signup>p{
+    width: 640px;
+height: 1px;
+background: #000;
+}
+
+.inputlist>form{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #000;
+
+/* B2-bold */
+font-family: Pretendard;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 142.857% */
+letter-spacing: -1px;
+
+}
+
+form>div{
+    display: flex;
+    padding: 10px 20px;
+
+   align-self: stretch;
+}
+
+.label{
+    width: 150px;
+height: 46px;
+display:flex;
+justify-content: flex-start;
+align-items: center;
+}
+#form>div>input{
+    height: 46px;
+padding: 0px 1px 0px 11px;
+border-radius: 4px;
+width: 447px;
+border: 1px solid var(--stroke-stroke-1, #CCC);
+}
+
+.frame>input{
+height: 46px;
+padding: 0px 1px 0px 11px;
+border-radius: 4px;
+width: 448px;
+border: 1px solid var(--stroke-stroke-1, #CCC);
+}
+
+#last{
+    background: #E2E2E2;
+    width: 640px;
+height: 1px;
+}
+
+/* .su{
+    display: flex;
+width: 240px;
+padding: 16px 0px;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+background: var(--stroke-stroke-2, #E2E2E2);
+color: var(--font-font2, #999);
+text-align: center;
+/* Btn */
+/* font-family: Pretendard;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+} */
+
+.frame{
+    display: flex;
+flex-direction: column;
+/* justify-content: center;
+align-items: flex-start; */
+gap: 8px; 
+flex: 1 0 0;
+
+}
+ul{
+
+    color: #999;
+
+font-family: Pretendard;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+}
+
+.su{
+    display: flex;
+    width: 240px;
+    padding: 16px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--stroke-stroke-2, #E2E2E2);
+    color: var(--font-font2, #999);
+    text-align: center;
+    /* Btn */
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+
+
+.none{
+    display: none;
+    color: var(--point-red, #FA622F);
+
+    /* Caption */
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+
+    line-height: 16px; /* 133.333% */
+    
+}
+
+.frame ul {
+    list-style-type: disc; /* 원형 불릿 */
+    padding-left: 20px; /* 리스트의 들여쓰기 */
+  }
+  
+  .frame ul li {
+    margin-bottom: 5px; /* 항목 사이의 간격 */
+  }

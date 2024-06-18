@@ -1,6 +1,64 @@
 <!-- 임시 로그인 페이지 -->
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/accounts/login.css'%}"/>
+
 <div class="container">
-  <h2>로그인</h2>
+  <div class="body">
+
+    <div class="frame30">
+      <div>로그인</div>
+
+      <div class="input">
+        <form class='form2' action="{% url 'accounts:login' %}" method="POST">
+          {% csrf_token %}
+          <div class="inputtype1">
+            <div>
+            <input type="text" name="username" id="username" placeholder="아이디를 입력해주세요" ></div>
+          </div>
+          <div class="inputtype2">
+          <div>
+            <input type="password" name="password" id="password"  placeholder="비밀번호를 입력해주세요" ></div>
+          </div>
+        
+   
+     </div>
+   
+      
+    <div class="frame36">
+      <div> 아이디 찾기 | 비밀번호 찾기 </div>
+    </div>  
+  </div>
+
+  <!-- frame30끝 -->
+
+    <div class="frame35">
+
+      <div class="login">
+        <label><button type="submit" id="loginButton" disabled>로그인</button></label>
+      </div> 
+
+      <div class="signup">
+        <label id="signup"><input type="button" id="signupButton">회원가입</label>
+      </div> 
+    </div>
+
+    </form> 
+
+
+      </div>
+      <!-- body태그 -->
+
 </div>
+
+
+{% if error %}
+<div style="color: red">{{ error }}</div>
+{% endif %}
+
+ <script src="{% static 'js/accounts/login.js'%}"></script>
 {% endblock %}
