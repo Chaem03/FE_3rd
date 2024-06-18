@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     usernameField.addEventListener('input', validateInput);
     passwordField.addEventListener('input', validateInput);
-
+    signupButton.addEventListener('click', function() {
+        const signupUrl = signupButton.getAttribute('data-signup-url');
+        window.location.href = signupUrl;
+    });
   
 });
